@@ -5,7 +5,6 @@ export class FaceSnap {
         public createdDate: Date,
         public snaps: number,
         public image: string,
-        public buttonText: string,
 
     ) {
 
