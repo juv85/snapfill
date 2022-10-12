@@ -9,19 +9,19 @@ import { FaceSnap } from '../models/face-snap.model';
 export class FaceSnapComponent implements OnInit{
   @Input() faceSnap!: FaceSnap
 
-  title!: string;
-  description!: string;
-  createdDate!: Date;
-  snaps!:number;
-  image!:string;
+  // title!: string;
+  // description!: string;
+  // createdDate!: Date;
+  // snaps!:number;
+  // image!:string;
   buttonText!: string;
 
   ngOnInit(){
-    this.title = 'Delz';
-    this.description = 'The best persona in the world';
-    this.createdDate = new Date();
-    this.snaps = 6;
-    this.image = "../../assets/Yumeko.jpg";
+    // this.title = 'Delz';
+    // this.description = 'The best persona in the world';
+    // this.createdDate = new Date();
+    // this.snaps = 6;
+    // this.image = "../../assets/Yumeko.jpg";
     this.buttonText = 'oh snap!';
   }
 
