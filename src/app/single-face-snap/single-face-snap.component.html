@@ -1,16 +1,17 @@
+<button routerLink="/facesnaps">Back</button>
+
 <div class="face-snap-card" [ngClass]="{'snapped': buttonText==='Oops, unsnap'}">
 
     <h2>{{faceSnap.title}}</h2>
     <div class="face-snap-informations">
-        <!-- <p id="createdDate">Online since {{faceSnap.createdDate | date : "dd-MMMM-yyyy,  HH:mm"}}</p> -->
+        <p id="createdDate">Online since {{faceSnap.createdDate | date : "dd-MMMM-yyyy,  HH:mm"}}</p>
         <p>{{faceSnap.description}}</p>
-        <!-- <p style="font-size: 13px;"><i>{{faceSnap.location}}</i></p> -->
+        <p style="font-size: 13px;"><i>{{faceSnap.location}}</i></p>
     </div>
 
     <img [src]="faceSnap.image" [alt]="faceSnap.title">
     <p>
-        <!-- <button (click)="onSnap()">{{buttonText}}</button> -->
-        <button (click)="onViewFaceSnap()">View</button>
+        <button (click)="onSnap()">{{buttonText}}</button>
         <span [ngStyle]="{color: 'rgb(0, '+faceSnap.snaps * 3+', 0'}">{{faceSnap.snaps}}</span>
     </p>
 </div>
